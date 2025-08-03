@@ -1,4 +1,4 @@
-namespace AttandanceAPI
+namespace AttendanceAPI
 {
     public class WeatherForecast
     {

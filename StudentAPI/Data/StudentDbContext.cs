@@ -1,12 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using SchoolManagementSystemAPI.Models.Entities;
+using StudentAPI.Models.Entities;
 
-namespace SchoolManagementSystemAPI.Data
+namespace StudentAPI.Data
 {
     public class StudentDbContext : DbContext //inherid Dbcontext
     {
-    
-        public StudentDbContext(DbContextOptions options) : base(options) 
+
+        public StudentDbContext(DbContextOptions options) : base(options)
         {
 
 

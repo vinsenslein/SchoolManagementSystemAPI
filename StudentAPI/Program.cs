@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Json;
-using SchoolManagementSystemAPI.Data;
+using StudentAPI.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

@@ -1,4 +1,4 @@
-﻿namespace SchoolManagementSystemAPI.Models
+﻿namespace StudentAPI.Models
 {
     public class AddStudentDTO
     {

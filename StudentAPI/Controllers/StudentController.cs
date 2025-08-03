@@ -1,11 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using SchoolManagementSystemAPI.Data;
-using SchoolManagementSystemAPI.Models;
-using SchoolManagementSystemAPI.Models.Entities;
+using StudentAPI.Models.Entities;
+using StudentAPI.Data;
+using StudentAPI.Models;
 
-namespace SchoolManagementSystemAPI.Controllers
+namespace StudentAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -21,7 +20,7 @@ namespace SchoolManagementSystemAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllStudent()
+        public async Task<IActionResult> GetAllStudents()
         {
             try
             {
@@ -49,7 +48,7 @@ namespace SchoolManagementSystemAPI.Controllers
         {
             try
             {
-                _logger.LogInformation("GET /api/students/{Id} called", id);
+                _logger.LogInformation("GET /api/student/{Id} called", id);
                 var student = await _StudentDbContext.Students.FindAsync(id);
                 if (student == null)
                 {
@@ -67,12 +66,37 @@ namespace SchoolManagementSystemAPI.Controllers
             }
         }
 
+        [HttpGet("{nis}")]
+        public async Task<IActionResult> GetStudentByNis(string nis)
+        {
+            try
+            {
+                _logger.LogInformation("GET /api/student/{NIS} called", nis);
+
+                var student = await _StudentDbContext.Students.FirstOrDefaultAsync(s => s.CSTUDENT_NIS == nis);
+
+                if (student == null)
+                {
+                    _logger.LogWarning("Student with NIS {NIS} not found", nis);
+                    return NotFound(new { message = $"Student with NIS {nis} not found" });
+                }
+
+                _logger.LogInformation("Student with NIS {NIS} found: {@Student}", nis, student);
+                return Ok(student);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error getting student by NIS");
+                return StatusCode(500, "Internal server error");
+            }
+        }
+
         [HttpPost]
         public async Task<IActionResult> AddStudent(AddStudentDTO addStudentDTO)
         {
             try
             {
-                _logger.LogInformation("POST /api/students called");
+                _logger.LogInformation("POST /api/student called");
 
                 var studentEntity = new StudentEntity
                 {
@@ -98,7 +122,7 @@ namespace SchoolManagementSystemAPI.Controllers
                 _logger.LogError(dbEx, "Database update error while adding student");
                 return StatusCode(500, "Database error");
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 _logger.LogError(ex, "Unexpected error while adding student");
                 return StatusCode(500, "Internal server error");

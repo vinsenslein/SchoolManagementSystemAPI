@@ -1,6 +1,7 @@
+using AttendanceAPI;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AttandanceAPI.Controllers
+namespace AttendanceAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
