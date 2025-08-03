@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  apigateway:
+    image: ${DOCKER_REGISTRY-}apigateway
+    build:
+      context: .
+      dockerfile: APIGateway/Dockerfile

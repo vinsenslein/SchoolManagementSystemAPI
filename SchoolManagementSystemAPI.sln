@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34916.146
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AttandanceAPI", "AttandanceAPI", "{6CC405E0-9567-4242-805D-CB7E897916F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AttandanceAPI", "AttandanceAPI\AttandanceAPI.csproj", "{4847CB9D-3DA3-427E-9E31-E1AD8E6FC93A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "APIGateway", "APIGateway", "{52370097-BFD4-4201-B652-76DC59AA61C0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIGateway", "APIGateway\APIGateway.csproj", "{3886DC84-7830-47F3-89D4-341CA7BD80FB}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{6BA95CD1-9F11-4720-AB5E-B248BD372A76}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StudentAPI", "StudentAPI", "{A4FA271B-5DF8-4139-B01B-3CA859FCBC2E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentAPI", "StudentAPI\StudentAPI.csproj", "{09F750A3-9A3A-4D97-973A-FF57C22DD98D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4847CB9D-3DA3-427E-9E31-E1AD8E6FC93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4847CB9D-3DA3-427E-9E31-E1AD8E6FC93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4847CB9D-3DA3-427E-9E31-E1AD8E6FC93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4847CB9D-3DA3-427E-9E31-E1AD8E6FC93A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3886DC84-7830-47F3-89D4-341CA7BD80FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3886DC84-7830-47F3-89D4-341CA7BD80FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3886DC84-7830-47F3-89D4-341CA7BD80FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3886DC84-7830-47F3-89D4-341CA7BD80FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BA95CD1-9F11-4720-AB5E-B248BD372A76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BA95CD1-9F11-4720-AB5E-B248BD372A76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BA95CD1-9F11-4720-AB5E-B248BD372A76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BA95CD1-9F11-4720-AB5E-B248BD372A76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09F750A3-9A3A-4D97-973A-FF57C22DD98D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09F750A3-9A3A-4D97-973A-FF57C22DD98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09F750A3-9A3A-4D97-973A-FF57C22DD98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09F750A3-9A3A-4D97-973A-FF57C22DD98D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4847CB9D-3DA3-427E-9E31-E1AD8E6FC93A} = {6CC405E0-9567-4242-805D-CB7E897916F6}
+		{3886DC84-7830-47F3-89D4-341CA7BD80FB} = {52370097-BFD4-4201-B652-76DC59AA61C0}
+		{09F750A3-9A3A-4D97-973A-FF57C22DD98D} = {A4FA271B-5DF8-4139-B01B-3CA859FCBC2E}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5E217362-1E8C-46C5-A336-A7C512BE22D8}
+	EndGlobalSection
+EndGlobal

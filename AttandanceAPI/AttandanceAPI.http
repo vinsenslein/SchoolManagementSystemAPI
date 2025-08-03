@@ -1,0 +1,6 @@
+@AttandanceAPI_HostAddress = http://localhost:5027
+
+GET {{AttandanceAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

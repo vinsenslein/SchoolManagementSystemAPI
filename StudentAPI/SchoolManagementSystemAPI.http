@@ -1,0 +1,7 @@
+@SchoolManagementSystemAPI_HostAddress = https://localhost:7188
+
+GET {{SchoolManagementSystemAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
