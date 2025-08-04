@@ -9,7 +9,7 @@
         public required string CATTENDANCE_STATUS { get; set; } //"Hadir", "Izin", "Sakit", dll
         public DateTime DCREATE_DATE { get; set; } = DateTime.Now;
         public DateTime DUPDATE_DATE { get; set; } = DateTime.Now;
-        public DateTime DUPDATE_DATE2 { get; set; } = DateTime.Now;
+
 
     }
 }
