@@ -72,6 +72,7 @@ namespace StudentAPI.Controllers
             try
             {
                 _logger.LogInformation("GET /api/student/{NIS} called", nis);
+                // Check Validasi NIS dari Student tidak boleh kosong atau null
 
                 var student = await _StudentDbContext.Students.FirstOrDefaultAsync(s => s.CSTUDENT_NIS == nis);
 
@@ -115,7 +116,7 @@ namespace StudentAPI.Controllers
 
                 _logger.LogInformation("Student {Name} added with ID {Id}", studentEntity.CSTUDENT_NAME, studentEntity.Id);
 
-                return CreatedAtAction(nameof(GetStudentById), new { id = studentEntity.Id }, studentEntity); //mengembalikan respon HTTP 201 (Created) saat kamu berhasil menambahkan data ke server 
+                return CreatedAtAction(nameof(GetStudentById), new { id = studentEntity.Id }, studentEntity); //mengembalikan respon HTTP 201 (Created) saat kamu berhasil menambahkan data ke server
             }
             catch (DbUpdateException dbEx)
             {

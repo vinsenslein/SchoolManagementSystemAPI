@@ -22,7 +22,7 @@ namespace StudentAPI.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("SchoolManagementSystemAPI.Models.Entities.StudentEntity", b =>
+            modelBuilder.Entity("StudentAPI.Models.Entities.StudentEntity", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()

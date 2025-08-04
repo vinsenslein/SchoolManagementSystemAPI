@@ -16,14 +16,16 @@ namespace AttendanceAPI.Controllers
         private readonly ILogger<AttendanceController> _logger;
         private readonly HttpClient _httpClient; // Client untuk melakukan request ke Student API
 
+        //AttendanceDbContext → untuk akses database absensi.
+        //ILogger<AttendanceController> → untuk logging.
+        //HttpClient → untuk komunikasi dengan API lain (dalam hal ini, Student API). (ASP.NET Core Dependency Injection)
+
         public AttendanceController(AttendanceDbContext attendanceDbContext, ILogger<AttendanceController> logger, HttpClient httpClient) //=>PARAM HTTP CLIENT UNTUK JOIN KE STUDENT
         {
             _attendanceDbContext = attendanceDbContext;
             _logger = logger;
             _httpClient = httpClient;
         }
-
-
 
         [HttpGet]
         public async Task<IActionResult> GetAllAttendances()
