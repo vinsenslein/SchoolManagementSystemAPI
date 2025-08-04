@@ -2,7 +2,7 @@
 {
     public class AttendanceEntity
     {
-        //test push branches
+        //test push branches2
         public Guid Id { get; set; }
         public required string CSTUDENT_NIS { get; set; }
         public DateTime DATTENDANCE_DATE { get; set; }
