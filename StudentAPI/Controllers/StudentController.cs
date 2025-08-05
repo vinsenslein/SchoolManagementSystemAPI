@@ -19,6 +19,13 @@ namespace StudentAPI.Controllers
             _logger = logger;
         }
 
+        //StudentDbContext → Kelas konteks database untuk mengakses data siswa.
+
+        //ILogger<StudentController> → Logger khusus untuk controller ini.
+
+        //_StudentDbContext, _logger → Field readonly untuk digunakan di seluruh controller.
+        
+
         [HttpGet]
         public async Task<IActionResult> GetAllStudents()
         {
