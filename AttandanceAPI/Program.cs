@@ -3,7 +3,6 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Json;
 using AttendanceAPI.Data;
-using AttendanceAPI.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,8 +25,6 @@ builder.Host.UseSerilog((context, services, loggerConfig) =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddHttpClient<AttendanceController>(); //=> HttpClient untuk controller
-
 
 builder.Services.AddDbContext<AttendanceDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
