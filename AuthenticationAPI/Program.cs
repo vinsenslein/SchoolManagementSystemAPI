@@ -23,7 +23,7 @@ builder.Services.AddSwaggerGen(options =>
 
     options.OperationFilter<SecurityRequirementsOperationFilter>();
  });
-=======
+
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<AuthenticationDbContext>(options =>

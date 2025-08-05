@@ -25,6 +25,8 @@ builder.Host.UseSerilog((context, services, loggerConfig) =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddHttpClient();
+
 
 builder.Services.AddDbContext<AttendanceDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -42,6 +44,5 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
 // Jalankan aplikasi
 app.Run();

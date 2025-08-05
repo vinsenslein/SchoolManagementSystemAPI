@@ -15,9 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StudentAPI", "StudentAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentAPI", "StudentAPI\StudentAPI.csproj", "{09F750A3-9A3A-4D97-973A-FF57C22DD98D}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticationIdentityAPI", "AuthenticationIdentityAPI", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticationAPI", "AuthenticationAPI", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationIdentityAPI", "AuthenticationAPI\AuthenticationIdentityAPI.csproj", "{C276A873-7BC3-4015-9650-8BC1ED77ED5B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationAPI", "AuthenticationAPI\AuthenticationAPI.csproj", "{C276A873-7BC3-4015-9650-8BC1ED77ED5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthAPI", "AuthAPI", "{6D302EFB-F9E4-43C0-B445-01638FE5B030}"
 EndProject
