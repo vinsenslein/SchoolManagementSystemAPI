@@ -17,6 +17,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "StudentAPI", "StudentAPI", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StudentAPI", "StudentAPI\StudentAPI.csproj", "{09F750A3-9A3A-4D97-973A-FF57C22DD98D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthenticationAPI", "AuthenticationAPI", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationAPI", "AuthenticationAPI\AuthenticationAPI.csproj", "{C276A873-7BC3-4015-9650-8BC1ED77ED5B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,10 @@ Global
 		{09F750A3-9A3A-4D97-973A-FF57C22DD98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{09F750A3-9A3A-4D97-973A-FF57C22DD98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{09F750A3-9A3A-4D97-973A-FF57C22DD98D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C276A873-7BC3-4015-9650-8BC1ED77ED5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C276A873-7BC3-4015-9650-8BC1ED77ED5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C276A873-7BC3-4015-9650-8BC1ED77ED5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C276A873-7BC3-4015-9650-8BC1ED77ED5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -47,6 +55,7 @@ Global
 		{4847CB9D-3DA3-427E-9E31-E1AD8E6FC93A} = {6CC405E0-9567-4242-805D-CB7E897916F6}
 		{3886DC84-7830-47F3-89D4-341CA7BD80FB} = {52370097-BFD4-4201-B652-76DC59AA61C0}
 		{09F750A3-9A3A-4D97-973A-FF57C22DD98D} = {A4FA271B-5DF8-4139-B01B-3CA859FCBC2E}
+		{C276A873-7BC3-4015-9650-8BC1ED77ED5B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5E217362-1E8C-46C5-A336-A7C512BE22D8}
