@@ -3,9 +3,6 @@ using Serilog;
 using Serilog.Events;
 using Serilog.Formatting.Json;
 using AttendanceAPI.Data;
-using AttendanceAPI.Controllers;
-using Ocelot.DependencyInjection;
-using Ocelot.Middleware; //install Ocelot package
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -28,10 +25,6 @@ builder.Host.UseSerilog((context, services, loggerConfig) =>
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddHttpClient<AttendanceController>(); //=> HttpClient untuk controller
-
-builder.Configuration.AddJsonFile("ocelot.json", optional: true, reloadOnChange: true); // Konfigurasi Ocelot dari file JSON
-builder.Services.AddOcelot(builder.Configuration); // Ocelot untuk API Gateway
 
 builder.Services.AddDbContext<AttendanceDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -49,8 +42,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
-await app.UseOcelot(); // Middleware Ocelot untuk routing API Gateway
 
 // Jalankan aplikasi
 app.Run();
